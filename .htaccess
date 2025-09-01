@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect to view_page.php with slug parameter
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z0-9-]+)/?$ view_page.php?slug=$1 [L,QSA]

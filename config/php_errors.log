@@ -1,0 +1,129 @@
+[20-Aug-2025 09:08:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\web\IYEF\config\db.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db.php(41): mysqli->close()
+#1 C:\xampp\htdocs\web\IYEF\config\db.php(47): closeDatabaseConnection(Object(mysqli))
+#2 [internal function]: {closure}()
+#3 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db.php on line 41
+[20-Aug-2025 09:14:46 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:14:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\web\IYEF\config\db.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db.php(41): mysqli->close()
+#1 C:\xampp\htdocs\web\IYEF\config\db.php(47): closeDatabaseConnection(Object(mysqli))
+#2 [internal function]: {closure}()
+#3 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db.php on line 41
+[20-Aug-2025 09:21:55 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 25
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 78
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 108
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 112
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 270
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 305
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 361
+[20-Aug-2025 09:24:24 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.program_gallery' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n    SELECT * ...')
+#1 C:\xampp\htdocs\web\IYEF\program.php(356): fetchAll('\r\n    SELECT * ...', Array)
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:25:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 25
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 78
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 108
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 112
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 270
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 305
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 361
+[20-Aug-2025 09:26:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.program_gallery' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n    SELECT * ...')
+#1 C:\xampp\htdocs\web\IYEF\program.php(356): fetchAll('\r\n    SELECT * ...', Array)
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:27:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:27:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 25
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 78
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 108
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 112
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 270
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 305
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\web\IYEF\program.php on line 309
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 313
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\web\IYEF\program.php on line 361
+[20-Aug-2025 09:27:51 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.program_gallery' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n    SELECT * ...')
+#1 C:\xampp\htdocs\web\IYEF\program.php(356): fetchAll('\r\n    SELECT * ...', Array)
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:28:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:30:49 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\web\IYEF\admin\blog\posts.php on line 64
+[20-Aug-2025 09:33:08 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:33:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75
+[20-Aug-2025 09:33:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'iyef_db.testimonials' doesn't exist in C:\xampp\htdocs\web\IYEF\config\db_functions.php:75
+Stack trace:
+#0 C:\xampp\htdocs\web\IYEF\config\db_functions.php(75): mysqli->prepare('\r\n             ...')
+#1 C:\xampp\htdocs\web\IYEF\Programs.php(215): fetchAll('\r\n             ...')
+#2 {main}
+  thrown in C:\xampp\htdocs\web\IYEF\config\db_functions.php on line 75

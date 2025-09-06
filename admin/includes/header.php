@@ -1,8 +1,9 @@
 <?php
 session_start();
-require_once($_SERVER['DOCUMENT_ROOT'] .  '/web/IYEF/config/db.php');
-require_once($_SERVER['DOCUMENT_ROOT'] .  '/web/IYEF/config/db_functions.php');
-require_once($_SERVER['DOCUMENT_ROOT'] .  '/web/IYEF/includes/functions/users.php');
+require_once 'config/.env.db';
+require_once($_SERVER['DOCUMENT_ROOT'] . BASE_LINK . 'config/db.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . BASE_LINK . 'config/db_functions.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . BASE_LINK . 'includes/functions/users.php');
 
 // Redirect to login if not authenticated
 if (!isset($_SESSION['user_id'])) {

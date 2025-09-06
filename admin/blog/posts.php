@@ -1,7 +1,9 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] .  '/web/IYEF/config/db.php');
-require_once($_SERVER['DOCUMENT_ROOT'] .  '/web/IYEF/includes/functions/blog.php');
-require_once($_SERVER['DOCUMENT_ROOT'] .  '/web/IYEF/includes/functions/users.php');
+require_once 'config/.env.db';
+require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'config/db.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'config/db.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'includes/functions/blog.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'includes/functions/users.php');
 
 // Handle post deletion
 if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])) {

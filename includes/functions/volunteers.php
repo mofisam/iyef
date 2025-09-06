@@ -1,5 +1,6 @@
 <?php
-require_once '../config/db_functions.php';
+require_once 'config/base_link.php';
+require_once($_SERVER['DOCUMENT_ROOT'] .  BASE_FILE .'config/db_functions.php');
 
 /**
  * Apply as a volunteer

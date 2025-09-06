@@ -94,7 +94,7 @@ require_once 'includes/header.php';
         </div>
         <div class="row g-4">
             <?php
-            // Fetch featured programs
+            // Fetch featured programs.git 
             $programs_query = "SELECT id, title, slug, description, image FROM programs ORDER BY created_at DESC LIMIT 3";
             $programs_result = $conn->query($programs_query);
             

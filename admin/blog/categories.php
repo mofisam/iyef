@@ -1,5 +1,5 @@
 <?php
-require_once 'config/.env.db';
+require_once '../config/base_link.php';
 require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'config/db.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'includes/functions/blog.php');
 

@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             // Redirect to admin if user is admin
             if ($_SESSION['user_role'] === 'admin') {
-                header('Location: admin/');
+                header('Location: index.php');
                 exit;
             } else {
                 // Regular users are redirected to their profile

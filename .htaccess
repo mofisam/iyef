@@ -1,7 +1,47 @@
+# --------------------------------------------
+# 🌐 Core Settings
+# --------------------------------------------
 RewriteEngine On
-RewriteBase /
 
-# Redirect to view_page.php with slug parameter
-RewriteCond %{REQUEST_FILENAME} !-f
+# --------------------------------------------
+# 🔁 Clean URLs (Remove .php extension)
+# Example: /about instead of /about.php
+# --------------------------------------------
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([a-z0-9-]+)/?$ view_page.php?slug=$1 [L,QSA]
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# --------------------------------------------
+# 🧼 Remove trailing slashes (optional)
+# --------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# --------------------------------------------
+# 🔒 Security Headers
+# --------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# --------------------------------------------
+# ❌ Custom Error Pages
+# --------------------------------------------
+ErrorDocument 404 http://localhost/IYEF/
+ErrorDocument 403 http://localhost/IYEF/
+ErrorDocument 500 http://localhost/IYEF/
+""
+# --------------------------------------------
+# 🚫 Block Access to Sensitive Files
+# --------------------------------------------
+<FilesMatch "\.(env|json|log|md|git|htaccess|htpasswd|)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# --------------------------------------------
+# 🚫 Disable Directory Browsing
+# --------------------------------------------
+Options -Indexes

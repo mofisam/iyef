@@ -38,7 +38,7 @@ $currentUser = getUserById($_SESSION['user_id']);
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
     
     <!-- Custom Admin CSS -->
-    <link rel="stylesheet" href="http://localhost/web/IYEF/assets/css/admin.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/admin.css">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -48,7 +48,7 @@ $currentUser = getUserById($_SESSION['user_id']);
     <nav class="navbar navbar-expand navbar-dark bg-primary shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand d-lg-none" href="#">
-                <img src="/assets/images/logo-white.png" alt="IYEF" height="30">
+                <img src="/assets/images/white.png" alt="IYEF" height="30">
             </a>
             
             <ul class="navbar-nav ms-auto">

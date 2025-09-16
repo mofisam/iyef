@@ -58,7 +58,7 @@ try {
                 <img src="<?= htmlspecialchars(BASE_URL . ltrim($settings['site_logo'], '/'), ENT_QUOTES) ?>" 
                      alt="<?= htmlspecialchars($settings['site_name'] ?? 'IYEF Admin') ?>" 
                      height="40"
-                     onerror="this.src='<?= BASE_URL ?>assets/images/logo-fallback.png'">
+                     onerror="this.src='<?= BASE_URL ?>assets/images/IYEF_logo.jpg'">
             <?php else: ?>
                 <div class="text-white fw-bold fs-4">IYEF ADMIN</div>
             <?php endif; ?>

@@ -1,13 +1,18 @@
 <?php
 session_start();
-require_once '../config/base_link.php';
-require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'config/db.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'config/db_functions.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . BASE_FILE . 'includes/functions/users.php');
+
+
+// Define base path for filesystem includes
+define('BASE_PATH', __DIR__ . '/../../');
+
+// Use filesystem paths for includes
+require_once(BASE_PATH . 'config/db.php');
+require_once(BASE_PATH . 'config/db_functions.php');
+require_once(BASE_PATH . 'includes/functions/users.php');
 
 // Redirect to login if not authenticated
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
+    header('Location: ../login.php');
     exit;
 }
 
@@ -48,9 +53,9 @@ $currentUser = getUserById($_SESSION['user_id']);
     <nav class="navbar navbar-expand navbar-dark bg-primary shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand d-lg-none" href="#">
-                <img src="/assets/images/white.png" alt="IYEF" height="30">
+                <img src="assets/images/white.png" alt="IYEF" height="30">
             </a>
-            
+
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

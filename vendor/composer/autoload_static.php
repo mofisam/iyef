@@ -11,12 +11,20 @@ class ComposerStaticInita9e04c0d0a3df31bbc59026f324a18f8
         array (
             'Yabacon\\' => 8,
         ),
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Yabacon\\' => 
         array (
             0 => __DIR__ . '/..' . '/yabacon/paystack-php/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 

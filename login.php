@@ -69,7 +69,9 @@ $page_title = "Admin Login";
                 <div class="card admin-card shadow-sm">
                     <div class="card-body p-5">
                         <div class="text-center mb-4">
-                            <img src="assets/images/logo.png" alt="IYEF" height="60">
+                            <a href="<?= BASE_URL ?>"> 
+                                <img src="assets/images/IYEF_logo.jpg" alt="IYEF" height="60">
+                            </a>
                             <h2 class="mt-3 mb-0">Admin Login</h2>
                             <p class="text-muted">Access your admin dashboard</p>
                         </div>
@@ -92,8 +94,10 @@ $page_title = "Admin Login";
                             </div>
                         </form>
                         
-                        <div class="text-center mt-4">
-                            <a href="forgot-password.php" class="text-decoration-none">Forgot Password?</a>
+                        <div class="text-center mt-3">
+                            <a href="forgot-password.php" class="text-decoration-none">
+                                <i class="fas fa-key me-1"></i> Forgot Password?
+                            </a>
                         </div>
                     </div>
                 </div>

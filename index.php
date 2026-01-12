@@ -27,7 +27,7 @@ require_once 'includes/header.php';
                 <!-- Main heading with animated text -->
                 <h1 class="display-2 fw-bold mb-4 text-white animate-slide-up" style="line-height: 1.1;">
                     Transforming <span class="text-warning">Youth</span><br>
-                    <span> i</span><span class="typed-text" id="typed-text"></span>
+                    <span class="before-typed-text">i</span><span class="typed-text" id="typed-text"></span>
                 </h1>
                 
                 <!-- Description -->
@@ -64,7 +64,7 @@ require_once 'includes/header.php';
                     <div class="col-md-3 col-6">
                         <div class="text-white text-center">
                             <div class="display-4 fw-bold mb-2 counter" data-target="25">0</div>
-                            <div class="small text-uppercase opacity-75">Countries</div>
+                            <div class="small text-uppercase opacity-75">Communities</div>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
@@ -104,7 +104,6 @@ require_once 'includes/header.php';
                 background-repeat: no-repeat;
                 z-index: -1;">
     </div>
-
     
     <div class="container py-5">
         <div class="row align-items-center">
@@ -753,6 +752,7 @@ document.addEventListener('DOMContentLoaded', function() {
     --success-gradient: linear-gradient(135deg, #28a745, #1e7e34);
     --warning-gradient: linear-gradient(135deg, #ffc107, #e0a800);
     --purple: #6f42c1;
+    --bgpurple:rgb(239, 232, 255);
 }
 
 .bg-gradient-dark {
@@ -768,7 +768,10 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .bg-purple {
-    background-color: var(--purple) !important;
+    background-color: var(--bgpurple) !important;
+}
+.before-typed-text{
+display: inline;
 }
 
 .text-purple {

@@ -193,7 +193,7 @@ try {
                 <div class="card h-100 border-0 shadow-lg hover-lift overflow-hidden">
                     <div class="card-header bg-warning bg-opacity-10 border-0 py-4">
                         <div class="d-flex align-items-center">
-                            <div class="icon-wrapper bg-warning text-dark rounded-3 p-3 me-3">
+                            <div class="icon-wrapper bg-warning text-white rounded-3 p-3 me-3">
                                 <i class="fas fa-eye fa-2x"></i>
                             </div>
                             <div>
@@ -204,7 +204,7 @@ try {
                     </div>
                     <div class="card-body p-4 p-lg-5">
                         <div class="vision-statement bg-warning bg-opacity-5 p-4 rounded-3 mb-4">
-                            <p class="mb-0 fst-italic text-dark fw-medium">
+                            <p class="mb-0 fst-italic text-white fw-medium">
                                 "To raise kingdom youths who can weather the storms of life, making positive impact with their lives."
                             </p>
                         </div>
@@ -447,8 +447,13 @@ try {
 <!-- Impact Stats Section - Animated -->
 <section class="py-5 position-relative overflow-hidden">
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-primary opacity-90"></div>
-    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"none\" stroke=\"white\" stroke-width=\"0.5\" stroke-opacity=\"0.1\"/></svg>'); background-size: 100px 100px; opacity: 0.5;"></div>
-    
+    <div class="position-absolute top-0 end-0 w-50 h-100 opacity-5"
+        style="background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\' preserveAspectRatio=\'none\'><path d=\'M0,0 L100,0 L100,100 Z\' fill=\'%23007bff\'/></svg>');
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: -1;">
+    </div>
+
     <div class="container py-5 position-relative" style="z-index: 2;">
         <div class="text-center mb-5">
             <h2 class="display-5 fw-bold text-white mb-3">Our Impact Journey</h2>
@@ -767,6 +772,7 @@ document.addEventListener('DOMContentLoaded', function() {
     --success-gradient: linear-gradient(135deg, #28a745, #1e7e34);
     --warning-gradient: linear-gradient(135deg, #ffc107, #e0a800);
     --purple: #6f42c1;
+    --bgpurple:rgb(239, 232, 255);
 }
 
 .bg-gradient-primary {
@@ -778,7 +784,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .bg-purple {
-    background-color: var(--purple) !important;
+    background-color: var(--bgpurple) !important;
 }
 
 .text-purple {

@@ -27,7 +27,7 @@ require_once 'includes/header.php';
                 <!-- Main heading with animated text -->
                 <h1 class="display-2 fw-bold mb-4 text-white animate-slide-up" style="line-height: 1.1;">
                     Transforming <span class="text-warning">Youth</span><br>
-                    <span class="before-typed-text">i</span><span class="typed-text" id="typed-text"></span>
+                    <span class="before-typed-text">-</span><span class="typed-text" id="typed-text"></span>
                 </h1>
                 
                 <!-- Description -->
@@ -403,12 +403,12 @@ require_once 'includes/header.php';
         
         <div class="row g-4">
             <?php
-            // Fetch upcoming events
-            $events_query = "SELECT id, title, slug, description, location, event_date, image FROM events WHERE event_date >= CURDATE() ORDER BY event_date ASC LIMIT 3";
-            $events_result = $conn->query($events_query);
+            // Fetch upcoming events using the function
+            require_once 'includes/functions/events.php';
+            $eventsData = getAllEvents(1, 3, true); // Get first page, 3 events, upcoming only
             
-            if ($events_result->num_rows > 0) {
-                while ($event = $events_result->fetch_assoc()) {
+            if (!empty($eventsData['events'])) {
+                foreach ($eventsData['events'] as $event) {
                     $event_date = new DateTime($event['event_date']);
                     $event_day = $event_date->format('d');
                     $event_month = $event_date->format('M');
@@ -437,7 +437,7 @@ require_once 'includes/header.php';
                                             <h5 class="card-title fw-bold mb-1">' . htmlspecialchars($event['title']) . '</h5>
                                             <div class="d-flex flex-wrap gap-3 small text-muted">
                                                 <span><i class="fas fa-clock me-1"></i> ' . $event_time . '</span>
-                                                <span><i class="fas fa-map-marker-alt me-1"></i> ' . htmlspecialchars($event['location']) . '</span>
+                                                <span><i class="fas fa-map-marker-alt me-1"></i> ' . htmlspecialchars($event['location'] ?? 'TBD') . '</span>
                                             </div>
                                         </div>
                                     </div>
@@ -491,17 +491,12 @@ require_once 'includes/header.php';
         
         <div class="row g-4">
             <?php
-            // Fetch latest blog posts
-            $blog_query = "SELECT bp.id, bp.title, bp.slug, bp.excerpt, bp.featured_image, u.full_name AS author, bp.published_at 
-                          FROM blog_posts bp 
-                          JOIN users u ON bp.author_id = u.id
-                          WHERE bp.is_published = 1 
-                          ORDER BY bp.published_at DESC 
-                          LIMIT 3";
-            $blog_result = $conn->query($blog_query);
+            // Fetch latest blog posts using the function
+            require_once 'includes/functions/blog.php';
+            $blogData = getBlogPosts(1, 3, true); // Get first page, 3 posts, published only
             
-            if ($blog_result->num_rows > 0) {
-                while ($post = $blog_result->fetch_assoc()) {
+            if (!empty($blogData['posts'])) {
+                foreach ($blogData['posts'] as $post) {
                     $post_date = new DateTime($post['published_at']);
                     echo '<div class="col-lg-4 col-md-6">
                             <div class="card h-100 border-0 shadow-sm overflow-hidden transition-all hover-lift">
@@ -516,7 +511,7 @@ require_once 'includes/header.php';
                                                 <i class="fas fa-user"></i>
                                             </div>
                                             <div>
-                                                <small class="fw-medium">' . htmlspecialchars($post['author']) . '</small>
+                                                <small class="fw-medium">' . htmlspecialchars($post['author_name'] ?? 'IYEF Team') . '</small>
                                                 <br>
                                                 <small><i class="far fa-calendar me-1"></i>' . $post_date->format('M j, Y') . '</small>
                                             </div>
@@ -525,7 +520,7 @@ require_once 'includes/header.php';
                                 </div>
                                 <div class="card-body p-4">
                                     <h5 class="card-title fw-bold mb-3">' . htmlspecialchars($post['title']) . '</h5>
-                                    <p class="card-text text-muted mb-4">' . (!empty($post['excerpt']) ? $post['excerpt'] : substr(strip_tags($post['content']), 0, 150) . '...') . '</p>
+                                    <p class="card-text text-muted mb-4">' . (!empty($post['excerpt']) ? $post['excerpt'] : (isset($post['content']) ? substr(strip_tags($post['content']), 0, 150) . '...' : 'Read more...')) . '</p>
                                     <a href="blog-post.php?slug=' . $post['slug'] . '" class="btn btn-sm btn-outline-primary">
                                         Read Article <i class="fas fa-arrow-right ms-2"></i>
                                     </a>
@@ -771,7 +766,7 @@ document.addEventListener('DOMContentLoaded', function() {
     background-color: var(--bgpurple) !important;
 }
 .before-typed-text{
-display: inline;
+    visibility: hidden;
 }
 
 .text-purple {

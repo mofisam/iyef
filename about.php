@@ -41,10 +41,10 @@ try {
 } catch (Exception $e) {
     // Default partners if table doesn't exist
     $partners = [
-        ['name' => 'UNESCO', 'logo' => 'partner-unesco.png', 'website' => '#'],
-        ['name' => 'Youth Development Initiative', 'logo' => 'partner-youth.png', 'website' => '#'],
-        ['name' => 'Global Education Fund', 'logo' => 'partner-education.png', 'website' => '#'],
-        ['name' => 'Community Partners', 'logo' => 'partner-community.png', 'website' => '#'],
+        ['name' => 'partner 1', 'logo' => 'partner-unesco.png', 'website' => '#'],
+        ['name' => 'partner 2', 'logo' => 'partner-youth.png', 'website' => '#'],
+        ['name' => 'partner 3', 'logo' => 'partner-education.png', 'website' => '#'],
+        ['name' => 'partner 4', 'logo' => 'partner-community.png', 'website' => '#'],
     ];
 }
 ?>

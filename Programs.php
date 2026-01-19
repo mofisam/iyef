@@ -23,12 +23,6 @@ $activePrograms = getActivePrograms();
     <div class="container position-relative" style="z-index: 2;">
         <div class="row justify-content-center text-center">
             <div class="col-lg-10 col-xl-8">
-                <!-- Badge -->
-                <div class="d-inline-flex align-items-center bg-white bg-opacity-20 text-white rounded-pill px-4 py-2 mb-4 animate-fade-in">
-                    <span class="dot me-2" style="width: 10px; height: 10px; background: #4cd964; border-radius: 50%; animation: pulse 2s infinite;"></span>
-                    <span class="fw-medium">Transforming Lives Since 2021</span>
-                </div>
-                
                 <!-- Main heading -->
                 <h1 class="display-2 fw-bold mb-4 text-white animate-slide-up" style="line-height: 1.2;">
                     Youth Empowerment<br>
@@ -36,7 +30,7 @@ $activePrograms = getActivePrograms();
                 </h1>
                 
                 <!-- Description -->
-                <p class="lead mb-5 text-white opacity-75 animate-fade-in" style="font-size: 1.35rem; animation-delay: 0.3s;">
+                <p class="lead mb-5 text-wh ite opacity-75 animate-fade-in" style="font-size: 1.35rem; animation-delay: 0.3s;">
                     Discover comprehensive initiatives designed to equip young people with skills, knowledge, and opportunities for a brighter future.
                 </p>
                 
@@ -710,10 +704,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .min-vh-60 {
     min-height: 60vh;
-}
-
-.dot {
-    animation: pulse 2s infinite;
 }
 
 .border-dashed {

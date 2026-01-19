@@ -85,12 +85,6 @@ try {
     <div class="container position-relative" style="z-index: 2;">
         <div class="row justify-content-center text-center">
             <div class="col-lg-10 col-xl-8">
-                <!-- Badge -->
-                <div class="d-inline-flex align-items-center bg-white bg-opacity-20 text-white rounded-pill px-4 py-2 mb-4 animate-fade-in">
-                    <span class="dot me-2" style="width: 10px; height: 10px; background: #4cd964; border-radius: 50%; animation: pulse 2s infinite;"></span>
-                    <span class="fw-medium">We're Here to Help You</span>
-                </div>
-                
                 <!-- Main heading -->
                 <h1 class="display-2 fw-bold mb-4 text-white animate-slide-up" style="line-height: 1.2;">
                     Let's Connect &<br>
@@ -841,9 +835,6 @@ document.addEventListener('DOMContentLoaded', function() {
     min-height: 60vh;
 }
 
-.dot {
-    animation: pulse 2s infinite;
-}
 
 .border-dashed {
     border-style: dashed !important;

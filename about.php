@@ -63,12 +63,6 @@ try {
     <div class="container position-relative" style="z-index: 2;">
         <div class="row justify-content-center text-center">
             <div class="col-lg-10 col-xl-9">
-                <!-- Badge -->
-                <div class="d-inline-flex align-items-center bg-white bg-opacity-20 rounded-pill px-4 py-2 mb-2 mt-4 animate-fade-in">
-                    <span class="dot me-2" style="width: 10px; height: 10px; background: #4cd964; border-radius: 50%; animation: pulse 2s infinite;"></span>
-                    <span class="fw-medium">Empowering Youth Since 2022</span>
-                </div>
-                
                 <!-- Main heading -->
                 <h1 class="display-2 fw-bold mb-4 text-white animate-slide-up" style="line-height: 1.2;">
                     Building <span class="text-warning">Indefatigable</span><br>
@@ -856,10 +850,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .min-vh-80 {
     min-height: 80vh;
-}
-
-.dot {
-    animation: pulse 2s infinite;
 }
 
 .border-dashed {

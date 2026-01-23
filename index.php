@@ -57,13 +57,13 @@ require_once 'includes/header.php';
                 <div class="row g-4 mt-5 pt-4 border-top border-white border-opacity-25 animate-fade-in" style="animation-delay: 0.7s;">
                     <div class="col-md-3 col-6">
                         <div class="text-white text-center">
-                            <div class="display-4 fw-bold mb-2 counter" data-target="500">0</div>
+                            <div class="display-4 fw-bold mb-2 counter" data-target="100">0</div>
                             <div class="small text-uppercase opacity-75">Youths Trained</div>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
                         <div class="text-white text-center">
-                            <div class="display-4 fw-bold mb-2 counter" data-target="25">0</div>
+                            <div class="display-4 fw-bold mb-2 counter" data-target="10">0</div>
                             <div class="small text-uppercase opacity-75">Communities</div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ require_once 'includes/header.php';
                     </div>
                     <div class="col-md-3 col-6">
                         <div class="text-white text-center">
-                            <div class="display-4 fw-bold mb-2 counter" data-target="8">0</div>
+                            <div class="display-4 fw-bold mb-2 counter" data-target="3">0</div>
                             <div class="small text-uppercase opacity-75">Years Active</div>
                         </div>
                     </div>

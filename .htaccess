@@ -29,9 +29,9 @@ RewriteRule ^(.+)/$ /$1 [R=301,L]
 # --------------------------------------------
 # ❌ Custom Error Pages
 # --------------------------------------------
-ErrorDocument 404 https://iyef.fandvagroservices.com.ng/
-ErrorDocument 403 https://iyef.fandvagroservices.com.ng/
-ErrorDocument 500 https://iyef.fandvagroservices.com.ng/
+ErrorDocument 404 https://iyefoundation.org/
+ErrorDocument 403 https://iyefoundation.org/
+ErrorDocument 500 https://iyefoundation.org/
 ""
 # --------------------------------------------
 # 🚫 Block Access to Sensitive Files

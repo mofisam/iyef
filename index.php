@@ -370,7 +370,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="donate.php" class="btn btn-light btn-lg px-4">
+                        <a href="donate.php" class="btn btn-light btn-lg px-2">
                             <i class="fas fa-heart me-2"></i> Donate Now
                         </a>
                         <a href="volunteer.php" class="btn btn-outline-light btn-lg px-4">

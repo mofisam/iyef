@@ -98,12 +98,14 @@ require_once 'includes/header.php';
 <!-- About Section - Redesigned -->
 <section id="about" class="py-5 position-relative">
     <!-- Background pattern -->
-    <div class="position-absolute top-0 end-0 w-50 h-100 opacity-5"
-        style="background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\' preserveAspectRatio=\'none\'><path d=\'M0,0 L100,0 L100,100 Z\' fill=\'%23007bff\'/></svg>');
-                background-size: cover;
-                background-repeat: no-repeat;
-                z-index: -1;">
-    </div>
+    <div class="position-absolute top-0 end-0 w-50 h-100"
+     style="background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\' preserveAspectRatio=\'none\'><path d=\'M0,0 L100,0 L100,100 Z\' fill=\'%23007bff\'/></svg>');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.09;
+            z-index: -1;">
+</div>
+
     
     <div class="container py-5">
         <div class="row align-items-center">
